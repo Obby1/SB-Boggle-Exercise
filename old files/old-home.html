@@ -1,0 +1,62 @@
+{% extends 'base.html'  %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Let's Play Boggle!</h1>
+<!-- <form action="/begin" method="POST"> -->
+<div class="game_div">
+    <table class="game_board">
+        <thead>
+            <tr>
+                <th colspan="5">
+                    BOGGLE!!!!!
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            {% for row in board %}
+            <tr>                
+                {% for letter in row %}
+                    <td>
+                        {{letter}}
+                    </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- <form method="POST" class="add-word"> -->
+    <form method="POST" class="add-word">
+    <input name="word" class="word" autofocus>
+    <button>Enter</button>
+  </form>
+
+  <p class="msg">
+    <!-- our JS will put messages here dynamically -->
+  </p>
+
+  <ul class="words">
+    <!-- our JS will words here as they score -->   
+  </ul>
+
+
+<!-- <div class="make_guess"> -->
+    <!-- <form action="/home/guess" id="guessForm" method="POST"> -->
+    <!-- <form action="/check-word" id="guessForm" method="POST" > -->
+    <!-- <form method="GET" class="guessForm" >
+        <input type="text" name="guess" placeholder="type guess here!" class="guessText" autofocus>
+    </form> -->
+<!-- 
+</div> -->
+<!-- 
+<p class="msg"> -->
+    <!-- our JS will put messages here dynamically -->
+<!-- </p> -->
+
+<!-- <ul class="words"> -->
+    <!-- our JS will words here as they score -->   
+</ul>
+{% endblock %}

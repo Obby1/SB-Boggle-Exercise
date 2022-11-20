@@ -1,0 +1,33 @@
+
+/* .board thead{
+    background-color: #333;
+    color: #fff;
+} */
+
+.board td{
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.board {
+    font-size: 50px;
+    text-align: center;
+   
+}
+
+#boggle{
+    display: block;
+    margin-left: 40%;
+    margin-right: auto;
+    width: 40%;
+} 
+
+.word {
+    border: none;
+    width: 50%;
+    border-bottom: 2px solid red;
+    margin-left: 5%;
+    margin-right: auto;
+    height: 40px;
+    font-size: 35px;
+  }
